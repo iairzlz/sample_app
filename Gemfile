@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use Puma as the app server
@@ -39,6 +38,15 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+end
+
+group :test do
+  #using minitest
+  gem 'minitest', '~> 5.10', '>= 5.10.3'
+  gem 'minitest-reporters', '~> 1.1', '>= 1.1.15'
+  #using guard
+  gem 'guard', '~> 2.14', '>= 2.14.1'
+  gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
 end
 
 group :development do
