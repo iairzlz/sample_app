@@ -9,9 +9,11 @@ end
 gem 'rails', '~> 5.1.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# Use bcrypt
+gem 'bcrypt'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-#using bootstrap-sass
+# Use bootstrap-sass
 gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
